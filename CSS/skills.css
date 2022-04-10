@@ -1,0 +1,285 @@
+
+
+/*  ==== NAVBAR ==== */
+
+.skills{
+    border-bottom: 1px solid #B1790C;
+    }
+
+/*  ==== BODY ==== */
+
+body{
+    overflow: hidden;}
+
+.totalskill{
+    position: absolute;
+    top: 50%;
+    left: 150px;
+    transform: translateY(-50%);
+    height: 80%;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+
+.totalskill2{
+    position: absolute;
+    top: 71%;
+    left: 850px;
+    transform: translateY(-50%);
+    height: 40%;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+
+.skillinfo{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    }
+.applogo{
+    height: 60px;
+    }
+
+.softwarename,
+.softwareinfo{
+    color: #C3BCB2;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    }
+
+.softwarename{
+    font-weight: 400;
+    margin-left: 15px;
+    }
+
+.softwareinfo{
+    font-weight: 200;
+    font-size: 15px;
+    }
+
+.totalbar{
+    height: 18px;
+    width: 400px;
+    border-radius: 5px;
+    background-color: #545454;
+    margin: 10px 0px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+p.percentage{
+    color: rgb(255, 255, 255);
+    position: relative;
+    right: -40px;
+    padding-top: 2px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+    }
+
+/* === SKILL SCORES === */
+
+.pstotalscore{
+    height: 18px;
+    width: 80%;
+    border-radius: 5px;
+    background-color: #001E36;
+    box-shadow: 3px 0px 2px #323232;
+    margin: 10px 0px;
+    animation: score 1s ease-out;
+    transform-origin: 0%;
+    animation-delay: .1s;
+    transform: scaleX(0);
+    animation-fill-mode: forwards;
+    }
+
+.lttotalscore{
+    height: 18px;
+    width: 60%;
+    border-radius: 5px;
+    background-color: #31A8FF;
+    box-shadow: 3px 0px 2px #323232;
+    margin: 10px 0px;
+    animation: score 1s ease-out;
+    transform-origin: 0%;
+    animation-delay: .3s;
+    transform: scaleX(0);
+    animation-fill-mode: forwards;
+    }
+
+.iltotalscore{
+    height: 18px;
+    width: 35%;
+    border-radius: 5px;
+    background-color: #FF9A00;
+    box-shadow: 3px 0px 2px #323232;
+    margin: 10px 0px;
+    animation: score 1s ease-out;
+    transform-origin: 0%;
+    animation-delay: .6s;
+    transform: scaleX(0);
+    animation-fill-mode: forwards;
+    }
+
+.prtotalscore{
+    height: 18px;
+    width: 50%;
+    border-radius: 5px;
+    background-color: #7D7DD1;
+    box-shadow: 3px 0px 2px #323232;
+    margin: 10px 0px;
+    animation: score 1s ease-out;
+    transform-origin: 0%;
+    animation-delay: .9s;
+    transform: scaleX(0);
+    animation-fill-mode: forwards;
+    }
+
+.xdtotalscore{
+    height: 18px;
+    width: 30%;
+    border-radius: 5px;
+    background-color: #CC46C1;
+    box-shadow: 3px 0px 2px #323232;
+    margin: 10px 0px;
+    animation: score 1s ease-out;
+    transform-origin: 0%;
+    animation-delay: 1.2s;
+    transform: scaleX(0);
+    animation-fill-mode: forwards;
+    }
+
+.bltotalscore{
+    height: 18px;
+    width: 85%;
+    border-radius: 5px;
+    background-color: #BF6000;
+    box-shadow: 3px 0px 2px #323232;
+    margin: 10px 0px;
+    animation: score 1s ease-out;
+    transform-origin: 0%;
+    animation-delay: 1.5s;
+    transform: scaleX(0);
+    animation-fill-mode: forwards;
+    }
+
+.htmltotalscore{
+    height: 18px;
+    width: 30%;
+    border-radius: 5px;
+    background-color: #F16529;
+    box-shadow: 3px 0px 2px #323232;
+    margin: 10px 0px;
+    animation: score 1s ease-out;
+    transform-origin: 0%;
+    animation-delay: 1.8s;
+    transform: scaleX(0);
+    animation-fill-mode: forwards;
+        }
+
+.csstotalscore{
+    height: 18px;
+    width: 40%;
+    border-radius: 5px;
+    background-color: #2965F1;
+    box-shadow: 3px 0px 2px #323232;
+    margin: 10px 0px;
+    animation: score 1s ease-out;
+    transform-origin: 0%;
+    animation-delay: 2.1s;
+    transform: scaleX(0);
+    animation-fill-mode: forwards;
+    }
+
+.jstotalscore{
+    height: 18px;
+    width: 0%;
+    border-radius: 5px;
+    background-color: #F1BF25;
+    box-shadow: 3px 0px 2px #323232;
+    margin: 10px 0px;
+    animation: score 1s ease-out;
+    transform-origin: 0%;
+    animation-delay: 2.4s;
+    transform: scaleX(0);
+    animation-fill-mode: forwards;
+    }
+
+
+/* === SKILL GAPS === */
+
+
+.skillcontainer:nth-child(2){
+    margin-left: 30px;
+    }
+.skillcontainer:nth-child(3){
+    padding-left: 60px;
+    }
+.skillcontainer:nth-child(4){
+    margin-left: 90px;
+    }
+.skillcontainer:nth-child(5){
+    margin-left: 120px;
+    }
+.skillcontainer:nth-child(6){
+    margin-left: 150px;
+    }
+.skillcontainer:nth-child(7){
+    margin-left: 180px;
+}
+.skillcontainer:nth-child(8){
+    margin-left: 210px;
+    }
+.skillcontainer:nth-child(9){
+    margin-left: 240px;
+    }
+/* === MARBLE2 === */
+
+.marble2{
+    height: 900px;
+    opacity: .4;
+    position:absolute;
+    right: -250px;
+    animation: marble2op 3s;
+    }
+
+.skillknowledge{
+    font-size: 150px;
+    color: #C3BCB2;
+    width: 1000px;
+    opacity: .5;
+    position: absolute;
+    right: 80px;
+    top: 100px;
+    }
+
+/* ===================== MEDIA QUERY ========================= */
+
+
+
+@media only screen and (min-width: 960px) and (max-width: 1715px) { 
+    .skillknowledge{
+        font-size:100px;
+        color: #C3BCB2;
+        width: 1000px;
+        opacity: .5;
+        position: absolute;
+        right: -200px;
+        top: 100px;
+        }
+    
+        .marble2{
+            height: 900px;
+            opacity: .2;
+            position:absolute;
+            right: -250px;
+            animation: marble2op 3s;
+            }
+
+
+
+}

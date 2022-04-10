@@ -1,0 +1,68 @@
+    /* === ANIMAZIONI === */
+
+    @keyframes headop {
+    from{opacity: 0; left: -500px;}
+        to{opacity: .2; }
+        }
+    
+    @keyframes fadeIn{
+            from {opacity: 0;}
+            to {opacity: 1;}
+            }
+
+    @keyframes noiseop {
+        from{opacity: 0; left: -200px;}
+        to{opacity: .2; }
+        }
+
+    @keyframes separatorfadein {
+        from{opacity: 0;}
+        to{opacity: 1;}    
+        }
+        
+    @keyframes contentsxin {
+        from{position: relative; left: -100px; opacity: 0;}
+        to{position: relative; left: 0px; opacity: 1;}
+        }
+        
+    @keyframes contentdxin {
+        from{position: relative; left: 100px; opacity: 0;}
+        to{position: relative; left: 0px; opacity: 1;}
+        }
+        
+    @keyframes textsxin {
+        from{position: relative; left: -50px; opacity: 0;}
+        to{position: relative; left: 0px; opacity: 1;}
+        }
+        
+    @keyframes textdxin {
+        from{position: relative; left: 50px; opacity: 0;}
+        to{position: relative; left: 0px; opacity: 1;}
+        }
+        
+    @keyframes titoloin {
+        from{position: relative; top: 50px; opacity: 0;}
+        to{position: relative; top: 0px; opacity: 1;}  
+        }
+
+    @keyframes marble2op {
+        from{right: -400px; opacity: 0;}
+        to{opacity: .4;}
+        }
+        
+    @keyframes score{
+        from {transform:scaleX(0); box-shadow: 0px 0px 0px;}
+        to{transform:scaleX(1);}
+        }  
+
+    @keyframes cassetteop {
+        from{opacity: 0; left: -400px;}
+        to{opacity: .2;}
+        }
+
+    @keyframes popuptext {
+        from{top: 40%; opacity: 0;}
+        to{opacity: 1;}
+        }
+
+      
