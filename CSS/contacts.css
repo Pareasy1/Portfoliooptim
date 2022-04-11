@@ -8,7 +8,7 @@
 /* === BODY === */
 
 body{
-    overflow: hidden;
+    overflow-y: hidden;
     }
     
 .contacts {
