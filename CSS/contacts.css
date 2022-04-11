@@ -7,6 +7,10 @@
 
 /* === BODY === */
 
+body{
+   overflow: hidden;
+   }
+
 .contacts {
     background-color: #ffffff  !important; 
     color: #B1790C !important;
