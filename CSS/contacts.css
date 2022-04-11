@@ -68,7 +68,7 @@ ul.social li{
     margin-left: 10px;
     }
 
-img{
+    .social img{
     margin-right: 10px;
     z-index: -1;
     }
@@ -180,4 +180,123 @@ button.submit:hover{
     z-index: -2;
     opacity: .2;
     animation: noiseop 5s;
+    }
+
+/*  ================= MEDI QUERY ============== */
+
+
+
+@media only screen and (max-width: 420px) {
+    .contacts {
+        background-color: #B1790C;
+        border-radius: 8px 8px 0px 0px !important;
+        font-size: 25px;
+        color: #ffffff;
+        font-family: 'Josefin Sans', sans-serif;
+        transition: none !important;
+        }
+        .noise{
+            display: none;
+            }
+        
+        .noise_op{
+            position: absolute;
+            width: 100%;
+            top: 250px;
+            left: -150px;
+            z-index: -2;
+            opacity: .6;
+            animation: none;
+
+            }
+            .content{
+                position: absolute;
+                width: 100%;
+                left: 20px;
+                top: 100px;
+                display: flex;
+                }
+                .nomecognome{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    }
+
+                input[type='text']{
+                    margin-top: 10px;
+                    width:98%;
+                    height: 46px;
+                    border-radius: 10px;
+                    border: none;
+                    font-family: 'Josefin Sans', sans-serif;
+                    font-size: 16px;
+                    padding-left: 10px;
+                    }
+                    input[type='text']:focus{
+                        background-color: #f3f3f3;
+                        outline: none;    
+                    } 
+                    textarea{
+                        width: 95%;
+                        height: 20%;
+                        border-radius: 10px;
+                        border: none;
+                        font-family: 'Josefin Sans', sans-serif;
+                        font-size: 16px;
+                        padding: 10px;
+                        
+                        resize: none;
+                        }
+                    form{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    width: 130%;
+                    height: 480px;
+                    margin-top: 30px;
+                    position: relative;
+                    top: 350px;
+                   
+
+                    }
+
+                    .spacer2{display: none;}
+
+                    .compile{
+                        z-index: 99;
+                        display: flex;
+                        flex-direction: column-reverse;
+                        }
+                    h2{
+                        color:#B1790C;
+                        position: absolute;
+                        top:0px;
+                        font-weight: 300;
+                        font-size: 30px;
+                        }
+
+                    ul.social{
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        margin-top: 50px;
+                        }
+                    ul.social li{
+                        margin-top: 10px;
+                        }
+                            
+                        .social li a {
+                        display: flex;
+                        align-items: center;
+                        text-decoration: none;
+                        color: white;
+                        font-family: 'Josefin Sans', sans-serif;
+                        font-size: 20px;
+                        margin-left: 0px;
+                        
+                        }
+
+                    .social img{
+                         width: 21px;
+                        }
     }

@@ -13,6 +13,11 @@
 
 header {z-index: 999;}
 
+/* NASCONDO TESTO PER MOBILE */
+.mobile{display: none;}
+nav.propriety-mobile{display: none;}
+/* ======================== */
+
 /*  ==== CONTENITORE TESTRO CENTRALE ==== */
 
 section{
@@ -136,8 +141,117 @@ section{
 
 /* ===================== MEDIA QUERY ========================= */
 
+@media only screen and (max-width: 480px) {
+  .yellowbanner{
+    display: none;
+  }
+  .testa{
+    display: none;
+  }
+/* ================= ANDREA PARISI (VERTICALE) ===================== */
+  h1.name{
+    display: none;
+        }
 
- @media only screen and (min-width: 960px) and (max-width: 1454px) { 
+        section{
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          width: 80%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0%;
+          transform: translateX(-50%);
+          }
+  .mobile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 70%;
+  }
+  h1.name-vertical{
+    color: #B1790C;
+     writing-mode: vertical-lr;
+    text-orientation:upright;
+    font-size: 60px;
+    }
+  .namebar{
+    width: 3px;
+    height: 500px;
+    background: rgb(177,121,12);
+    background: linear-gradient(0deg, rgba(177,121,12,0) 0%, rgba(177,121,12,1) 25%, rgba(177,121,12,1) 50%, rgba(177,121,12,1) 75%, rgba(177,121,12,0) 100%);
+}
+  h1.cognome{
+      font-family: 'Josefin Sans', sans-serif;
+      color: #C3BCB2;
+      writing-mode: vertical-lr;
+      text-orientation:upright;
+      font-size: 60px;
+      letter-spacing: 10px;
+      margin-top: 20px;
+      font-weight: 200;
+    }
+
+/* =============================================================== */
+
+
+/* =============== PROPRIETY (VERTICALE) ========== */
+
+
+nav.propriety-mobile{
+  display:initial;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  bottom: 2%;
+  transform: translateX(-25%);
+  }
+.propriety{
+  display: none;
+}
+ul.description-mobile{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: none;
+  position: absolute;
+  bottom: 10px;
+  }
+    
+    
+ul li.desctext-mobile{
+  font-size: 20px;
+  color: #ffffff;
+  padding: 0 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: 2px;
+  font-weight: 200;
+  }
+
+.bar{
+  display: none;
+}
+
+
+/* ================================================== */
+    .marblehead_op{
+      opacity: .1;
+      z-index: -1;
+      position: absolute;
+      left: -350px;
+      top: 0%;
+      transform: translateY(-30%);
+      animation: none;
+      transform: scale(50%);}
+
+
+}
+ @media only screen and (min-width: 1176px) and (max-width: 1454px) { 
     .home{
       position: absolute;
       transform: translateY(0);
@@ -148,6 +262,7 @@ section{
 
     .marblehead{
       height: 500px;
+    
       }
 
     .yellowbannershadow{
@@ -156,7 +271,13 @@ section{
 
   }
   @media only screen and (min-width: 960px) and (max-width: 1176px) { 
-  
+    .home{
+      position: absolute;
+      transform: translateY(0);
+      top: 83%;
+      left: 50%;
+      transform: translateX(-50%);
+      }
     h1.name{
       font-size: 6vh;
       }
@@ -177,7 +298,14 @@ section{
   }
   
 
-  @media only screen and (min-width: 401px) and (max-width: 960px) {
+  @media only screen and (min-width: 481px) and (max-width: 960px) {
+    .home{
+      position: absolute;
+      transform: translateY(0);
+      top: 83%;
+      left: 50%;
+      transform: translateX(-50%);
+      }
       .marblehead {
         height: 311px;
         animation: fadeIn 1s;
@@ -196,18 +324,9 @@ section{
           left: 50%;
         }
 
-      .home{
-        color: rgba(195,188,178,0.21);
-        font-size: 5vw;
-        letter-spacing: 4px;
-        font-weight: 100;
-        animation: fadeIn 10s;
-        position: relative;
-        left: 50%;
-        bottom: 10%;
-        transform: translateX(-50%);
-        }
-
+        .yellowbannershadow{
+          top: 56px;
+          }
       h1.name{
         white-space: nowrap;
         font-size: 5vh;
@@ -221,3 +340,4 @@ section{
 
     
 
+    

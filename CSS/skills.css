@@ -259,7 +259,71 @@ p.percentage{
 
 /* ===================== MEDIA QUERY ========================= */
 
+@media only screen and (max-width: 480px) {
+html{
+    height: 100%;
+}
+    .skills{
+        border: none;
+        color: #C3BCB2 !important;
+        font-weight: 400 !important;
+        }
 
+    .marble2{
+        height: 400px;
+        opacity: .1;
+        position:absolute;
+        top: 60%;
+        right: -250px;
+        animation: none;
+            }
+
+    .skillknowledge{
+        display: none;
+        }
+
+.totalskill{
+    position: absolute;
+    left: 2%;
+}
+.totalskill2{
+    position: absolute;
+    left: 2%;
+    top: 114%;
+}  
+.skillcontainer{
+    margin: 0px !important;
+    padding: 0px !important;
+}
+.applogo{
+    height: 30px;
+    }
+
+    .totalbar{
+        height: 18px;
+        width: 30%;
+        border-radius: 5px;
+        background-color: #545454;
+        margin: 10px 0px 0 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+
+        .softwarename{
+            font-size: 18px;
+            font-weight: 400;
+            margin-left: 5px;
+            width: 30%;
+            }
+        
+        .softwareinfo{
+            font-weight: 200;
+            font-size: 12px;
+            }
+        
+    
+}
 
 @media only screen and (min-width: 960px) and (max-width: 1715px) { 
     .skillknowledge{
@@ -279,7 +343,5 @@ p.percentage{
             right: -250px;
             animation: marble2op 3s;
             }
-
-
 
 }
