@@ -5,8 +5,6 @@
     width: 100%;
   }
   body {
-    min-height: 100%;
-    min-width: 100%;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -15,7 +13,8 @@
 
 header {z-index: 999;}
 
-/* Yellowbanner */
+/*  ==== CONTENITORE TESTRO CENTRALE ==== */
+
 section{
     display: flex;
     justify-content: flex-start;
@@ -26,8 +25,90 @@ section{
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-/*     border: 1px solid red; */
-}
+    }
+    
+        /* Testa (img + shadow) */
+              .testa{
+                position: relative;
+                left: 10px;
+                z-index: 1;
+                }
+        /* ===================== */
+
+            .marblehead {
+                height: 622px;
+                animation: fadeIn 1s;
+                }
+
+            .yellowbannershadow{
+              position: absolute;
+              top: 34.1%;
+              left: 80%;
+              z-index: -1;
+              background:linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+              width: 200px;
+              height: 200px;
+              animation: fadeIn 3s;
+                }
+
+            .prtext{
+         
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              }
+
+            h1.name{
+              white-space: nowrap;
+              font-size: 9vh;
+              color: #B1790C;
+              letter-spacing: 4px;
+              font-weight: 300;
+              animation: fadeIn 4s;
+              }
+        
+            nav.propriety{
+              margin: 20px;
+              }
+                
+            ul.description{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              animation: fadeIn 8s;
+              }
+                
+                
+            ul li.desctext{
+              font-size: 20px;
+              color: #B1790C;
+              padding: 0 20px;
+              font-family: 'Josefin Sans', sans-serif;
+              letter-spacing: 2px;
+              font-weight: 200;
+              }
+                
+            div.bar{
+              height: 1px;
+              width: 400px;
+              background-color: #B1790C;
+              animation: fadeIn 6s;
+              }
+  
+            .home{
+              color: rgba(195,188,178,0.21);
+              font-size: 88px;
+              letter-spacing: 4px;
+              font-weight: 100;
+              animation: fadeIn 10s;
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              right: 10px;
+              }   
+  /* =================================================== */  
+  
+  
 .yellowbanner{
   z-index: -1;
     position: absolute;
@@ -38,90 +119,6 @@ section{
     height: 200px;
     animation: fadeIn 1s;
     }
-      
-        /* Testa */
-.testa{
-    position: relative;
-    left: 10px;
-}
-
-            .marblehead {
-                height: 622px;
-                animation: fadeIn 1s;
-                }
-
-            .yellowbannershadow{
-              position: absolute;
-              top: 34%;
-              left: 80%;
-                z-index: -1;
-                background:linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
-                width: 200px;
-                height: 200px;
-                animation: fadeIn 3s;
-                }
-        /*  */   
-
-        /* prtext */
-        .prtext{
-         
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-        }
-            h1.name{
-                white-space: nowrap;
-                font-size: 9vh;
-                color: #B1790C;
-                letter-spacing: 4px;
-                font-weight: 300;
-                animation: fadeIn 4s;
-                }
-        
-            nav.propriety{
-                margin: 20px;
-                }
-                
-            ul.description{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                animation: fadeIn 8s;
-                }
-                
-                
-            ul li.desctext{
-                font-size: 20px;
-                color: #B1790C;
-                padding: 0 20px;
-                font-family: 'Josefin Sans', sans-serif;
-                letter-spacing: 2px;
-                font-weight: 200;
-                }
-                
-            div.bar{
-                height: 1px;
-                width: 400px;
-                background-color: #B1790C;
-                animation: fadeIn 6s;
-                }
-
-            /* home */    
-            .home{
-                color: rgba(195,188,178,0.21);
-                font-size: 88px;
-                letter-spacing: 4px;
-                font-weight: 100;
-                animation: fadeIn 10s;
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                right: 10px;
-                }   
-            
-/* fine yellowbanner */
-
 
 .marblehead_op{
     opacity: .2;
@@ -139,38 +136,53 @@ section{
 
 /* ===================== MEDIA QUERY ========================= */
 
-/* Mobile Styles */
-@media only screen and (max-width: 400px) {
-    body {
-      background-color: #F09A9D; /* Red */
-    }
-  }
- /* Tablet Styles */
+
  @media only screen and (min-width: 960px) and (max-width: 1454px) { 
-  .home{
-    position: absolute;
-    transform: translateY(0);
-    top: 83%;
-    left: 50%;
-    transform: translateX(-50%);
-    }
-    .marblehead{height: 500px ;}
-    .yellowbannershadow{top: 152px;}
+    .home{
+      position: absolute;
+      transform: translateY(0);
+      top: 83%;
+      left: 50%;
+      transform: translateX(-50%);
+      }
+
+    .marblehead{
+      height: 500px;
+      }
+
+    .yellowbannershadow{
+      top: 152px;
+      }
+
   }
   @media only screen and (min-width: 960px) and (max-width: 1176px) { 
   
-  h1.name{font-size: 6vh;}
-  .marblehead{height: 400px ;}
-  .yellowbannershadow{top: 102px;}
-  ul li.desctext{font-size:15px; white-space: nowrap;}
+    h1.name{
+      font-size: 6vh;
+      }
+
+    .marblehead{
+      height: 400px;
+      }
+
+      .yellowbannershadow{
+      top: 102px;
+      }
+
+    ul li.desctext{
+      font-size:15px; 
+      white-space: nowrap;
+      }
 
   }
-  /* Tablet Styles */
+  
+
   @media only screen and (min-width: 401px) and (max-width: 960px) {
-    .marblehead {
-      height: 311px;
-      animation: fadeIn 1s;
-      }
+      .marblehead {
+        height: 311px;
+        animation: fadeIn 1s;
+        }
+
       .testa{
         z-index: 2;
         display: flex;
@@ -178,10 +190,12 @@ section{
         position: relative;
         left: 10px;
         }
+
         .prtext{
           position: absolute;
           left: 50%;
         }
+
       .home{
         color: rgba(195,188,178,0.21);
         font-size: 5vw;
@@ -191,14 +205,16 @@ section{
         position: relative;
         left: 50%;
         bottom: 10%;
-        transform: translateX(-50%);}
-        h1.name{
-          white-space: nowrap;
-          font-size: 5vh;
-          color: #B1790C;
-          letter-spacing: 4px;
-          font-weight: 300;
-          animation: fadeIn 4s;
+        transform: translateX(-50%);
+        }
+
+      h1.name{
+        white-space: nowrap;
+        font-size: 5vh;
+        color: #B1790C;
+        letter-spacing: 4px;
+        font-weight: 300;
+        animation: fadeIn 4s;
         }
 
       }
