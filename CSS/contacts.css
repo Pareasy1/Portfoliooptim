@@ -51,7 +51,7 @@ form{
     width: 400px;
     height: 480px;
     position: relative;
-    left: 10px;
+    /* left: 10px; */
     }
 
 ul.social li{
@@ -119,12 +119,13 @@ input[type='email']{
         }
 
 textarea{
-    width: 96%;
-    height: 98%;
+    width: 95%;
+    height: 80%;
     border-radius: 10px;
+    border: none;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
-    padding: 10px 10px;
+    padding: 10px;
     initial-letter: uppercase;
     resize: none;
     }
@@ -144,7 +145,8 @@ textarea::placeholder{
 
 button.submit{
     height: 46px;
-    margin-top: 20px;
+    width: 100%;
+    margin-top: 10px;
     border-radius: 5px;
     background-color: #3B5C6F;
     color: white;
@@ -155,14 +157,10 @@ button.submit{
     }
 
 button.submit:hover{
-    height: 46px;
-    margin-top: 20px;
-    border-radius: 5px;
+
     background-color: #C3BCB2;
     color: #222D2F;
-    border: none;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 16px;
+
     transition: ease .2s;
     }
 
