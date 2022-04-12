@@ -197,7 +197,7 @@ p   {
         align-items: flex-start;
         position: absolute;
         left: 1%;
-        top: 20%;
+        top: 10%;
         animation: popuptext 2s;
         }
 
