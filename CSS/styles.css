@@ -17,9 +17,12 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 20px ;
+    
     }
 
-
+    nav{
+        z-index: 999;
+    }
 a.contacts{
     text-decoration: none;
     border: none;
@@ -37,6 +40,7 @@ ul.link li {
     display: inline;
     padding: 0 80px;
     font-size: 25px;
+    
     }
 ul.link li a{
     text-decoration: none;
@@ -45,6 +49,7 @@ ul.link li a{
     font-family: 'Josefin Sans', sans-serif;
     transition: all .3s ease;
     font-weight: 200;
+    
     }
 
 
@@ -96,7 +101,7 @@ footer p.rights, h6{
 
     ul.link li {
         display: inline;
-        padding: 0 30px;
+        padding: 0 20px;
         font-size: 25px;
         } 
 }
@@ -110,12 +115,10 @@ footer p.rights, h6{
 }
     /* Mobile Styles */
 @media only screen and (max-width: 480px) {
-/*     ul.link{        
-        position: absolute;
-        right: 0%;
-        top: 50%;
-        transform: translateY(-50%);
-    } */
+    .page{ overflow-x: hidden;
+        position: fixed;
+        height: 100%;
+        width: 100%;}
 
     header{
         display: flex;

@@ -186,7 +186,8 @@ button.submit:hover{
 
 
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 480px) {
+    
     .contacts {
         background-color: #B1790C;
         border-radius: 8px 8px 0px 0px !important;
@@ -212,58 +213,63 @@ button.submit:hover{
             .content{
                 position: absolute;
                 width: 100%;
-                left: 20px;
+                left: 0%;
                 top: 100px;
                 display: flex;
+                justify-content: center;
                 }
                 .nomecognome{
                     display: flex;
                     flex-direction: column;
-                    justify-content: space-between;
-                    }
-
+                    align-items: center;
+                    width: 98%;
+                } 
                 input[type='text']{
+                    display: inline-block;
                     margin-top: 10px;
-                    width:98%;
+                    width: 100%;
                     height: 46px;
                     border-radius: 10px;
                     border: none;
                     font-family: 'Josefin Sans', sans-serif;
                     font-size: 16px;
-                    padding-left: 10px;
+                    
                     }
                     input[type='text']:focus{
                         background-color: #f3f3f3;
                         outline: none;    
                     } 
                     textarea{
-                        width: 95%;
                         height: 20%;
                         border-radius: 10px;
                         border: none;
                         font-family: 'Josefin Sans', sans-serif;
                         font-size: 16px;
-                        padding: 10px;
-                        
+                        /* padding-left: 10px; */
                         resize: none;
                         }
                     form{
                     display: flex;
                     flex-direction: column;
                     justify-content: flex-start;
-                    width: 130%;
+                    align-items: center;
+                    width:95vw;
                     height: 480px;
                     margin-top: 30px;
-                    position: relative;
-                    top: 350px;
-                   
-
+                    position: absolute;
+                    top: 80vh;
+                    left: 50%;
+                    transform: translateX(-50%);
                     }
+
+                    button.submit{
+                        width: 50%;
+                        }
 
                     .spacer2{display: none;}
 
                     .compile{
-                        z-index: 99;
+                        /* z-index: 99; */
                         display: flex;
                         flex-direction: column-reverse;
                         }
@@ -280,6 +286,7 @@ button.submit:hover{
                         flex-direction: column;
                         width: 100%;
                         margin-top: 50px;
+                        margin-left: 20px;
                         }
                     ul.social li{
                         margin-top: 10px;

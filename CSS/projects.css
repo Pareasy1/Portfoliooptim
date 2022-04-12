@@ -192,7 +192,7 @@ hr  {
 
 
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 480px) {
     a.projects{
         border: none;
         color: #C3BCB2 !important;
@@ -297,6 +297,18 @@ hr  {
                     transition: all .2s ease;
                     white-space: nowrap;
                     }
+
+                    .textsx a:hover, .textdx a:hover{ 
+                        text-decoration: none;
+                        background-color: white;
+                        font-family: 'Josefin Sans', sans-serif;
+                        font-size: 10px;
+                        font-weight: 200;
+                        position: relative;
+                        bottom: 0px;
+                        color: #3B5C6F;
+                        padding: 10px 20px;
+                        transition: ease .2s;}
                     .titolo{
                         display: flex;
                         flex-direction: column;

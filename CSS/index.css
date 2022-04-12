@@ -30,6 +30,7 @@ section{
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 0;
     }
     
         /* Testa (img + shadow) */
@@ -142,6 +143,8 @@ section{
 /* ===================== MEDIA QUERY ========================= */
 
 @media only screen and (max-width: 480px) {
+
+
   .yellowbanner{
     display: none;
   }
