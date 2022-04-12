@@ -336,12 +336,6 @@ hr  {
                         display: none;
                     }
                     h3.end{
-                        position: absolute;
-                        bottom: -420px;
-                        color: white;
-                        font-weight: 100;
-                        font-size: 20px;
-                        letter-spacing: 5px;
-                        white-space: nowrap;}
+display: none;
                     
                     }
