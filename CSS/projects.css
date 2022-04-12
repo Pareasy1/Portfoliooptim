@@ -209,52 +209,53 @@ hr  {
         width: 40%;
         position: absolute;
         left: 25%;
-        top: 100px;
+        top: 120px;
         }
 
 
-        .contentsx{          
+        .contentsx{ 
+                   
             height: 20vh;
-            padding: 20px 0px;
+            padding: 20px 0px 20px 0px;
             animation: contentdxin 1.5s ;
+            /* border: 1px solid rebeccapurple; */
+            float: left;
             }
         
         .contentdx{
+             
             height: 20vh;
-            padding: 20px 0px;
+            padding: 20px 0px 20px 0px;
             animation: contentdxin 1.5s ;
-            display: flex;
-            justify-content: flex-start !important;
-            flex-direction: column;
-            animation: contentdxin 1.5s ;
-            
+            float: left;
+
             }
 
 
             .images{
-                width: 80px;
-                height: 100px;
-                float: left;
+                width: 100%;
+                height: 100%;
+                /* float: left; */
                 }
             
             .square{
-                width: 80px;
-                height: 100px;
-                float: left;
+                width: 20vw ;
+                height: 25vw;
+                /* float: left; */
                 border: 1px solid #C3BCB2 ; 
                 }
             
             .imgsx{
-                height: 5vh;
+                height: 2vh;
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-start;
                 align-items: flex-start;
-
+                margin: 0;
                 }
             
             .imgdx{
-                height: 5vh;
+                height: 2vh;
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-start;
@@ -263,8 +264,8 @@ hr  {
                 }
             
             .textsx{
-                margin-left: 0px;
-                height: auto;
+                margin: 0px;
+                height: 3vh;
                 float: left;
                 animation: textsxin 2s;
                 }
@@ -302,7 +303,7 @@ hr  {
                     font-size: 15px;
                     font-weight: 200;
                     position: relative;
-                    bottom: 0px;
+                    top: 30%;
                     background-color: #3B5C6F;
                     padding: 10px 10px;
                     transition: all .2s ease;
@@ -313,12 +314,12 @@ hr  {
                         text-decoration: none;
                         background-color: white;
                         font-family: 'Josefin Sans', sans-serif;
-                        font-size: 10px;
+                        font-size: 15px;
                         font-weight: 200;
                         position: relative;
-                        bottom: 0px;
+                        top: 30%;
                         color: #3B5C6F;
-                        padding: 10px 20px;
+                        padding: 10px 10px;
                         transition: ease .2s;}
                     .titolo{
                         display: flex;
@@ -338,7 +339,12 @@ hr  {
                         position: absolute;
                         top: 60px;
                         }
-                    
+                        .separator{
+                        /* display: none */
+                        box-sizing: border-box;
+                        
+                        margin: 10px 0;
+                            }
                     .projectline{
                         height: 4px;
                         border: none;
@@ -355,3 +361,11 @@ hr  {
                     h3.end{display: none;
                     }
                     }
+
+
+@media only screen and (max-height: 720px) {
+    .separator{
+        display: none
+    }
+
+}
