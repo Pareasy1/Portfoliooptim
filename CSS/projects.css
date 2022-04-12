@@ -48,6 +48,7 @@
 
     }
 h1.projectstitle{
+    color: #B1790C;
     font-weight: 300;
     font-size: 50px;
     margin-bottom: 10px;
@@ -331,6 +332,7 @@ hr  {
                     
                         }
                     h1.projectstitle{
+                        color: #B1790C;
                         font-weight: 300;
                         font-size: 20px;
                         margin: 10px 20px;
