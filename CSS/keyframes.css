@@ -19,6 +19,10 @@
         from{opacity: 0;}
         to{opacity: 1;}    
         }
+    @keyframes separatorfadein-2 {
+        from{opacity: 0;}
+        to{opacity: 1;}    
+        }
         
     @keyframes contentsxin {
         from{position: relative; left: -100px; opacity: 0;}
@@ -43,6 +47,11 @@
     @keyframes titoloin {
         from{position: relative; top: 50px; opacity: 0;}
         to{position: relative; top: 0px; opacity: 1;}  
+        }
+
+    @keyframes titoloin-2 {
+        from{position: absolute; top: 150px; opacity: 0;}
+        to{position: absolute; top: 60px; opacity: 1;}  
         }
 
     @keyframes marble2op {

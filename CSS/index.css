@@ -181,8 +181,13 @@ section{
      writing-mode: vertical-lr;
     text-orientation:upright;
     font-size: 60px;
+    animation: fadeIn 4s;
     }
   .namebar{
+    opacity: 0;
+    animation: fadeIn 4s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
     width: 3px;
     height: 500px;
     background: rgb(177,121,12);
@@ -197,6 +202,10 @@ section{
       letter-spacing: 10px;
       margin-top: 20px;
       font-weight: 200;
+      animation: fadeIn 4s;
+      animation-delay: 1s;
+      opacity: 0;
+      animation-fill-mode: forwards;
     }
 
 /* =============================================================== */
@@ -249,7 +258,8 @@ ul li.desctext-mobile{
       left: -350px;
       top: 0%;
       transform: translateY(-30%);
-      animation: none;
+      animation: headop 2s;
+      animation-fill-mode: forwards;
       transform: scale(50%);}
 
 

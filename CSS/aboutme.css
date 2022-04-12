@@ -223,7 +223,7 @@ p   {
 p   {
     color: #C3BCB2;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 300;
     margin: 10px 0px;
     width: 50%;
@@ -232,7 +232,7 @@ p   {
 .BoldText{
         color: #B1790C;
         font-family: 'Josefin Sans', sans-serif;
-        font-size: 15px;
+        font-size: 20px;
         font-weight: 600;
         }
 
@@ -240,7 +240,7 @@ p   {
     .star{
         color: #B1790C;
         font-family: 'Josefin Sans', sans-serif;
-        font-size: 15px;
+        font-size: 23px;
         font-weight: 600;
         text-decoration: none;
         }
