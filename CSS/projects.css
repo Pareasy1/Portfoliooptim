@@ -139,7 +139,9 @@ article{
     animation: textdxin 2s;
     }
 
-.texh, h1{
+h1.title{
+    box-sizing: border-box;
+    padding: 5px;
     color: #B1790C;
     }
 
